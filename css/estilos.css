@@ -10,6 +10,7 @@
 
 body {
   font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -23,12 +24,21 @@ h1 {
   line-height: 1.5; /*interlineado*/
   letter-spacing: -.2px;/*espaciado entre letras*/
   color: white;
+  margin: 0;
   /* margin: top right bottom left; */
   /* text-transform: uppercase; */
   /* text-decoration: underline; */
 }
 h1 strong {
   color: #026fff;
+}
+h2 {
+  color: #026fff;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 40px;
 }
 
 .hero {
@@ -38,6 +48,12 @@ h1 strong {
   background-repeat: no-repeat;
   background-position-x: right;
   background-color: #1d252c;
+  display: flex;
+  align-items: center;
+}
+.portfolio {
+  background-color: #fafafa;
+  padding: 20px;
 }
 
 .project {
@@ -47,10 +63,38 @@ h1 strong {
   border-top-style: solid; */
   border: 1px solid gray;
   border-radius: 10px;
+  /* margin: 10px; */
   margin-bottom: 15px;
-  
-
+  padding: 20px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
+
+.project-course, 
+.project-date,
+.project-url {
+  margin: 10px 0;
+}
+
+.project-description {
+  font-size: 20px;
+}
+
+.project strong {
+  font-family: 'Fjalla One', sans-serif;
+}
+/* .project-date {
+  margin: 10px 0;
+} */
+
+.project-title {
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
 .project-details {
   width: 500PX;
 }
@@ -62,9 +106,72 @@ h1 strong {
 .header {
   background-color: #1b2127;
   color: white;
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header a {
   color: white;
   text-decoration: none;
+}
+
+.menu {
+  height: inherit;
+}
+.header ol {
+  display:  flex;
+  height: inherit;   
+}
+
+.header ol li {
+  height: inherit;   
+}
+.header a {
+  display: flex;
+  align-items: center;
+  height: inherit;
+  padding: 0 10px;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+figure {
+  margin: 0;
+}
+
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+
+}
+
+.box{
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  border: 1px solid red;
+  flex-shrink: 0;
+}
+
+.footer {
+  color: white;
+  background-color: #1d252c;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer img {
+  vertical-align: middle;
+}
+
+.footer a {
+  color: white;
 }
