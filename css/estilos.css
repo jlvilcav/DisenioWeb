@@ -315,6 +315,27 @@ figure {
   height: auto;
 }
 
+.youtube-video {
+  /* width: 100%; */
+  /* height: auto; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+/*Fofrmula horizontal (Height * 100) / width*/
+/*Fofrmula Vertical (width * 100) / Height*/
+.flexible-video {
+  width: 100%;
+  height: 0;
+  padding-top: 56.25%;
+  background: blue;
+  position: relative;
+}
+
 /* desktop first - que se empiece desde el MQ mas grande */
 
 @media screen and (max-width: 1024px) {
